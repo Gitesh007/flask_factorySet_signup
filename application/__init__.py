@@ -1,11 +1,11 @@
 """Initialize Flask app."""
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-from ddtrace import patch_all
+# from ddtrace import patch_all    # for logging purpose, will use it later
 
 
 db = SQLAlchemy()
-patch_all()
+# patch_all() # for logging purpose, will use it later
 
 
 def create_app():
